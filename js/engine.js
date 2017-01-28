@@ -52,7 +52,7 @@ function check(){
      score = score+5;
      ex++;
   } else {
-     response="Incorrect<br> Correct answer is "+a+op+b+"="+ans;
+     response="Incorrect :-( <br> Correct answer is "+a+op+b+"="+ans;
   }
   var responsediv = document.getElementById("feedback");
   responsediv.innerHTML = response;
