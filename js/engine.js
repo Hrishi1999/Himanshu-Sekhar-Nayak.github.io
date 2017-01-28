@@ -34,7 +34,7 @@ function makeQuestion(mode){
 }
 
 function gameOver(){
-	document.getElementById("question").innerHTML = "Game Over. You have scored "+score+" points.";
+	document.getElementById("question").innerHTML = "Game Over. You have scored "+score+" points. :-) ";
 }
 
 function handle(event){
@@ -48,11 +48,11 @@ function check(){
   var text = document.getElementById("answer");
   var ansfloat = parseFloat(text.value);
   if (ansfloat==ans){
-     response="Correct";
+     response="Correct :-)";
      score = score+5;
      ex++;
   } else {
-     response="Incorrect <br> Correct answer is "+a+op+b+"="+ans;
+     response="Incorrect :-( <br> Correct answer is "+a+op+b+"="+ans :-);
   }
   var responsediv = document.getElementById("feedback");
   responsediv.innerHTML = response;
